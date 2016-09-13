@@ -1,0 +1,29 @@
+﻿@using GulpBuildIntegration.Code
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="@Url.Content("~/favicon.ico?v=1")" />
+    <title>Gulp Build Integration</title>
+    @Html.VersionedLink("~/Client/css/lib*.css")
+    @Html.VersionedLink("~/Client/css/app*.css")
+    @Html.VersionedScript("~/Client/js/head*.js")
+    @RenderSection("styles", required: false)
+    <meta name="description" content="The description of my page" />
+</head>
+<body class="@ViewBag.BodyClass">
+    @RenderBody()
+    @Html.VersionedScript("~/Client/js/lib*.js")
+    @Html.VersionedScript("~/Client/js/app*.js")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            //initialization code goes here
+        });
+    </script>
+</body>
+</html>
+

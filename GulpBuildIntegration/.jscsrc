@@ -1,0 +1,799 @@
+{
+    /**
+	 * Path to load additional rules
+	 * Type: Array
+	 * Values: Array of file matching patterns
+	 */
+    "additionalRules": [ ],
+
+    /**
+	 * Extends defined rules with preset rules.
+	 * Type: String
+	 * Values: "crockford", "google", "jquery", "mdcs", "wikimedia", "yandex"
+	 */
+    "preset": "",
+
+    /**
+	 * Disables style checking for specified paths.
+	 * Type: Array
+	 * Values: Array of file matching patterns
+	 */
+    "excludeFiles": [ ],
+
+    /**
+	 * Changes the set of file extensions that will be processed.
+	 * Type: Array or String or "*"
+	 * Values: A single file extension or an Array of file extensions, beginning with a .. The matching is case insensitive. If "*" is provided, all files regardless of extension will match.
+	 */
+    "fileExtensions": "*",
+
+    /**
+	 * Requires curly braces after statements.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 * JSHint: curly
+	 */
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch",
+        "case",
+        "default"
+    ],
+
+    /**
+	 * Requires space after keyword.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 */
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "return",
+        "try",
+        "catch"
+    ],
+
+    /**
+	 * Disallows space after keyword.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 */
+    "disallowSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "try",
+        "catch"
+    ],
+
+    /**
+	 * Requires space before block statements (for loops, control structures).
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireSpaceBeforeBlockStatements": true,
+
+    /**
+	 * Disallows space before block statements (for loops, control structures).
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowSpaceBeforeBlockStatements": true,
+
+    /**
+	 * Requires parentheses around immediately invoked function expressions.
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: immed
+	 */
+    "requireParenthesesAroundIIFE": true,
+
+    /**
+	 * Requires space before and/or after ? or : in conditional expressions.
+	 * Type: Object or Boolean
+	 * Values: "afterTest", "beforeConsequent", "afterConsequent", "beforeAlternate" as child properties, or true to set all properties to true. Child properties must be set to true.
+	 */
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+
+    /**
+	 * Disallows space before and/or after ? or : in conditional expressions.
+	 * Type: Object or Boolean
+	 * Values: "afterTest", "beforeConsequent", "afterConsequent", "beforeAlternate" as child properties, or true to set all properties to true. Child properties must be set to true.
+	 */
+    "disallowSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+
+    /**
+	 * Requires space before () or {} in function expressions (both named and anonymous).
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows space before () or {} in function expressions (both named and anonymous).
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Requires space before () or {} in anonymous function expressions.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows space before () or {} in anonymous function expressions.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "disallowSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Requires space before () or {} in named function expressions.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "requireSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows space before () or {} in named function expressions.
+	 * Type: Object
+	 * 
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Requires space before () or {} in function declarations.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows space before () or {} in function declarations.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Requires space before () or {} in function declarations and expressions.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "requireSpacesInFunction": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows space before () or {} in function declarations and expressions.
+	 * Type: Object
+	 * Values: "beforeOpeningRoundBrace" and "beforeOpeningCurlyBrace" as child properties. Child properties must be set to true.
+	 */
+    "disallowSpacesInFunction": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    /**
+	 * Disallows multiple var declaration (except for-loop).
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowMultipleVarDecl": true,
+
+    /**
+	 * Requires multiple var declaration.
+	 * Type: Boolean or String
+	 * Values: true or "onevar"
+	 * 	if requireMultipleVarDecl defined as a true value, it will report only consecutive vars, if, on the other hand, value equals to "onevar" string, requireMultipleVarDecl will allow only one var per function scope.
+	 * JSHint: onevar
+	 */
+    "requireMultipleVarDecl": true,
+
+    /**
+	 * Requires blocks to begin and end with a newline
+	 * Type: Boolean or Integer
+	 * Values: true validates all non-empty blocks, Integer specifies a minimum number of statements in the block before validating.
+	 */
+    "requireBlocksOnNewline": true,
+
+    /**
+	 * Requires blocks to begin and end with 2 newlines
+	 * Type: Boolean or Integer
+	 * Values: true validates all non-empty blocks, Integer specifies a minimum number of statements in the block before validating.
+	 */
+    "requirePaddingNewlinesInBlocks": true,
+
+    /**
+	 * Disallows blocks from beginning and ending with 2 newlines.
+	 * Type: Boolean
+	 * Values: true validates all non-empty blocks.
+	 */
+    "disallowPaddingNewlinesInBlocks": true,
+
+    /**
+	 * Disallows empty blocks (except for catch blocks).
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: noempty
+	 */
+    "disallowEmptyBlocks": true,
+
+    /**
+	 * Disallows space after opening object curly brace and before closing.
+	 * Type: Boolean or String
+	 * Values: "all" or true for strict mode, "nested" ignores closing brackets in a row.
+	 */
+    "disallowSpacesInsideObjectBrackets": true,
+
+    /**
+	 * Disallows space after opening array square bracket and before closing.
+	 * Type: Boolean or String
+	 * Values: "all" or true for strict mode, "nested" ignores closing brackets in a row.
+	 */
+    "disallowSpacesInsideArrayBrackets": true,
+
+    /**
+	 * Disallows space after opening round bracket and before closing.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowSpacesInsideParentheses": true,
+
+    /**
+	 * Requires space after opening object curly brace and before closing.
+	 * Type: String
+	 * Values: "all" for strict mode, "allButNested" ignores closing brackets in a row.
+	 */
+    "requireSpacesInsideObjectBrackets": "all",
+
+    /**
+	 * Requires space after opening array square bracket and before closing.
+	 * Type: String
+	 * Values: "all" for strict mode, "allButNested" ignores closing brackets in a row.
+	 */
+    "requireSpacesInsideArrayBrackets": "all",
+
+    /**
+	 * Requires space after opening round bracket and before closing.
+	 * Type: String
+	 * Values: "all" for strict mode, "allButNested" ignores nested brackets in a row.
+	 */
+    "requireSpacesInsideParentheses": "all",
+
+    /**
+	 * Disallows quoted keys in object if possible.
+	 * Type: String or Boolean
+	 * Values:
+	 * 	true for strict mode
+	 * 	"allButReserved" allows ES3+ reserved words to remain quoted which is helpful when using this option with JSHint's es3 flag.
+	 */
+    "disallowQuotedKeysInObjects": true,
+
+    /**
+	 * Disallows identifiers that start or end in _, except for some popular exceptions:
+	 * 	(underscore.js)
+	 * 	filename (node.js global)
+	 * 	dirname (node.js global)
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: nomen
+	 */
+    "disallowDanglingUnderscores": true,
+
+    /**
+	 * Disallows space after object keys.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowSpaceAfterObjectKeys": true,
+
+    /**
+	 * Requires space after object keys.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireSpaceAfterObjectKeys": true,
+
+    /**
+	 * Disallows commas as last token on a line in lists.
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: laxcomma
+	 */
+    "disallowCommaBeforeLineBreak": true,
+
+    /**
+	 * Requires commas as last token on a line in lists.
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: laxcomma
+	 */
+    "requireCommaBeforeLineBreak": true,
+
+    /**
+	 * Requires proper alignment in object literals.
+	 * Type: String
+	 * Values:
+	 * 	"all" for strict mode,
+	 * 	"ignoreFunction" ignores objects if one of the property values is a function expression,
+	 * 	"ignoreLineBreak" ignores objects if there are line breaks between properties
+	 */
+    "requireAlignedObjectValues": "all",
+
+    /**
+	 * Requires operators to appear before line breaks and not after.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to require all possible binary operators to appear before line breaks
+	 * JSHint: laxbreak
+	 */
+    "requireOperatorBeforeLineBreak": [
+        "?",
+        "+",
+        "-",
+        "/",
+        "*",
+        "=",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        ">",
+        ">=",
+        "<",
+        "<="
+    ],
+
+    /**
+	 * Requires sticking unary operators to the right.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to disallow space after prefix for all unary operators
+	 */
+    "disallowSpaceAfterPrefixUnaryOperators": [
+        "++",
+        "--",
+        "+",
+        "-",
+        "~",
+        "!"
+    ],
+
+    /**
+	 * Disallows sticking unary operators to the right.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to require space after prefix for all unary operators
+	 */
+    "requireSpaceAfterPrefixUnaryOperators": [
+        "++",
+        "--",
+        "+",
+        "-",
+        "~",
+        "!"
+    ],
+
+    /**
+	 * Requires sticking unary operators to the left.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to disallow space before postfix for all unary operators (i.e. increment/decrement operators)
+	 */
+    "disallowSpaceBeforePostfixUnaryOperators": [
+        "++",
+        "--"
+    ],
+
+    /**
+	 * Disallows sticking unary operators to the left.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to require space before postfix for all unary operators (i.e. increment/decrement operators)
+	 */
+    "requireSpaceBeforePostfixUnaryOperators": [
+        "++",
+        "--"
+    ],
+
+    /**
+	 * Requires sticking binary operators to the left.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to disallow space before all possible binary operators
+	 */
+    "disallowSpaceBeforeBinaryOperators": [
+        ",",
+        "+",
+        "-",
+        "/",
+        "*",
+        "%",
+        "=",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%="
+    ],
+
+    /**
+	 * Disallows sticking binary operators to the left.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to require space before all possible binary operators without comma operator, since it's rarely used with this rule
+	 */
+    "requireSpaceBeforeBinaryOperators": [
+        ",",
+        "+",
+        "-",
+        "/",
+        "*",
+        "%",
+        "=",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%="
+    ],
+
+    /**
+	 * Requires sticking binary operators to the right.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to disallow space after all possible binary operators
+	 */
+    "disallowSpaceAfterBinaryOperators": [
+        ",",
+        "+",
+        "-",
+        "/",
+        "*",
+        "%",
+        "=",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%="
+    ],
+
+    /**
+	 * Disallows sticking binary operators to the right.
+	 * Type: Array or Boolean
+	 * Values: Array of quoted operators or true to require space after all possible binary operators
+	 */
+    "requireSpaceAfterBinaryOperators": [
+        ",",
+        "+",
+        "-",
+        "/",
+        "*",
+        "%",
+        "=",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%="
+    ],
+
+    /**
+	 * Disallows implicit type conversion.
+	 * Type: Array
+	 * Values: Array of quoted types
+	 */
+    "disallowImplicitTypeConversion": [
+        "numeric",
+        "boolean",
+        "binary",
+        "string"
+    ],
+
+    /**
+	 * Requires identifiers to be camelCased or UPPERCASE_WITH_UNDERSCORES
+	 * Type: Boolean or String
+	 * Values: true or "ignoreProperties"
+	 * JSHint: camelcase
+	 */
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+
+    /**
+	 * Disallows usage of specified keywords.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 */
+    "disallowKeywords": [
+        "with"
+    ],
+
+    /**
+	 * Disallows strings that span multiple lines without using concatenation.
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: multistr
+	 */
+    "disallowMultipleLineStrings": true,
+
+    /**
+	 * Disallows multiple blank lines in a row.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowMultipleLineBreaks": true,
+
+    /**
+	 * Option to check line break characters
+	 * Type: String
+	 * Values: "CR", "LF", "CRLF"
+	 */
+    "validateLineBreaks": "LF",
+
+    /**
+	 * Requires all quote marks to be either the supplied value, or consistent if true
+	 * Type: String or Object
+	 * Values:
+	 * 	"\"": all strings require double quotes
+	 * 	"'": all strings require single quotes
+	 * 	true: all strings require the quote mark first encountered in the source code
+	 * 	Object:
+	 * 		escape: allow the "other" quote mark to be used, but only to avoid having to escape
+	 * 		mark: the same effect as the non-object values
+	 * JSHint: quotmark
+	 */
+    "validateQuoteMarks": "'",
+
+    /**
+	 * Validates indentation for arrays, objects, switch statements, and block statements
+	 * Type: Integer or String
+	 * Values: A positive integer or "\t"
+	 * JSHint: indent
+	 */
+    "validateIndentation": 4,
+
+    /**
+	 * Requires lines to not contain both spaces and tabs consecutively, or spaces after tabs only for alignment if "smart"
+	 * Type: Boolean or String
+	 * Values: true or "smart"
+	 * JSHint: smarttabs
+	 */
+    "disallowMixedSpacesAndTabs": "smart",
+
+    /**
+	 * Requires all lines to end on a non-whitespace character
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: trailing
+	 */
+    "disallowTrailingWhitespace": true,
+
+    /**
+	 * Disallows an extra comma following the final element of an array or object literal.
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: es3
+	 */
+    "disallowTrailingComma": true,
+
+    /**
+	 * Requires an extra comma following the final element of an array or object literal.
+	 * Type: Boolean or Object
+	 * Values:
+	 * 	true: validates all arrays and objects
+	 * 	Object:
+	 * 		ignoreSingleValue: allows single property objects and single element arrays to not require a trailing comma
+	 */
+    "requireTrailingComma": true,
+
+    /**
+	 * Disallows placing keywords on a new line.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 */
+    "disallowKeywordsOnNewLine": [
+        "else"
+    ],
+
+    /**
+	 * Requires placing keywords on a new line.
+	 * Type: Array
+	 * Values: Array of quoted keywords
+	 */
+    "requireKeywordsOnNewLine": [
+        "catch"
+    ],
+
+    /**
+	 * Requires placing line feed at file end.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireLineFeedAtFileEnd": true,
+
+    /**
+	 * Requires all lines to be at most the number of characters specified
+	 * Type: Integer or Object
+	 * Values:
+	 * 	Integer: lines should be at most the number of characters specified
+	 * 	Object:
+	 * 		value: (required) lines should be at most the number of characters specified
+	 * 		tabSize: (default: 1) considered the tab character as number of specified spaces
+	 * 		allowComments: (default: false) allows comments to break the rule
+	 * 		allowUrlComments: (default: false) allows comments with long urls to break the rule
+	 * 		allowRegex: (default: false) allows regular expression literals to break the rule
+	 * JSHint: maxlen
+	 */
+    "maximumLineLength": {
+        "value": 80,
+        "tabSize": 4,
+        "allowComments": false,
+        "allowUrlComments": false,
+        "allowRegex": false
+    },
+
+    /**
+	 * Requires constructors to be capitalized (except for this)
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: newcap
+	 */
+    "requireCapitalizedConstructors": true,
+
+    /**
+	 * Option to check var that = this expressions
+	 * Type: Array or String
+	 * Values: String value used for context local declaration
+	 */
+    "safeContextKeyword": [
+        "that",
+        "self"
+    ],
+
+    /**
+	 * Requires member expressions to use dot notation when possible
+	 * Type: Boolean
+	 * Values: true
+	 * JSHint: sub
+	 */
+    "requireDotNotation": true,
+
+    /**
+	 * Requires the variable to be the right hand operator when doing a boolean comparison
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireYodaConditions": true,
+
+    /**
+	 * Requires the variable to be the left hand operator when doing a boolean comparison
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowYodaConditions": true,
+
+    /**
+	 * Enables JSDoc validation.
+	 * Type: Object
+	 * Values:
+	 * 	"checkParamNames" ensures param names in jsdoc and in function declaration are equal
+	 * 	"requireParamTypes" ensures params in jsdoc contains type
+	 * 	"checkRedundantParams" reports redundant params in jsdoc
+	 */
+    "validateJSDoc": {
+        "checkParamNames": true,
+        "requireParamTypes": true,
+        "checkRedundantParams": true
+    },
+
+    /**
+	 * Requires that a line comment (//) be followed by a space.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireSpaceAfterLineComment": true,
+
+    /**
+	 * Requires that a line comment (//) not be followed by a space.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowSpaceAfterLineComment": true,
+
+    /**
+	 * Requires that a function expression be named.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowAnonymousFunctions": true,
+
+    /**
+	 * Requires that a function expression be anonymous.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireAnonymousFunctions": true,
+
+    /**
+	 * Disallows newline before opening curly brace of all block statements.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "disallowNewlineBeforeBlockStatements": true,
+
+    /**
+	 * Requires newline before opening curly brace of all block statements.
+	 * Type: Boolean
+	 * Values: true
+	 */
+    "requireNewlineBeforeBlockStatements": true
+
+    /**
+	 * removed rules
+	 *
+	 * disallowLeftStickedOperators
+	 * disallowRightStickedOperators
+	 * requireLeftStickedOperators
+	 * requireRightStickedOperators
+	 */
+}
